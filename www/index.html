@@ -22,7 +22,13 @@
   <body>
     <noscript>This page contains webassembly and javascript content, please enable javascript in your browser.</noscript>
     <canvas id="game-of-life-canvas"></canvas>
+    <button id="game-of-life-play-pause"></button>
     <button id="game-of-life-randomize">Randomize</button>
+    <button id="game-of-life-clear">Clear</button>
+    <label for="game-of-life-speed">Game Speed</label>
+    <input type="range" id="game-of-life-speed" value="-1" max="-1" min="-4" step="1" />
+    <div id="game-of-life-current-speed">100%</div>
+    <div id="game-of-life-fps" style="white-space: pre; font-family: monospace;"></div>
 
     <script src="./bootstrap.js"></script>
   </body>
